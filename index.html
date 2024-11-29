@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="feedback.php"> -->
 </head>
 
 <body>
@@ -25,7 +27,7 @@
             <a href="#nov">
                 Новиники недели
             </a>
-            <a href="#">
+            <a href="#pdv">
                 Контакты
             </a>
             <a href="#">
@@ -52,7 +54,7 @@
                 2. Также игра разрабатывалась для платформы Sega Dreamcast, но релиз был отменён. В январе 2013 года
                 Valve портировала игру на Linux и OS X. Игра Black Mesa (2020), разработанная студией Crowbar
                 Collective, представляет собой переработанный и расширенный ремейк оригинальной игры Half-Life.</p>
-            <img src="HLbox.png" alt="" class="HL">
+            <img src="HLbox.png" alt="" class="HL" width="450px" height="250px">
         </div>
 
         <div class="cards" id="nov">
@@ -89,16 +91,23 @@
         </div>
         <div class="cnt">
             <h2>Оформление заказ</h2>
-            <input type="email" placeholder="Укажите email"></input><br>
-            <input type="text" placeholder="Укажите игру"></input><br>
-            <input type="text" class="blc" placeholder="Введите номер маминой карточки и 3 цифры сзади"></input><br>
-            <button>Заказать</button>
+            <form onsubmit="">
+                <input type="text"  placeholder="Введите имя" name="name" required>
+                <input type="text" placeholder="Введите телефон" name="phone" required></input><br>
+                <!-- <input type="text" placeholder="Укажите игру" name="message"></input><br>
+                <input type="text" class="blc" placeholder="Введите номер маминой карточки и 3 цифры сзади"></input><br> -->
+                <button type="submit">Заказать</button>
+            </form>
         </div>
-        <div class="pdv">
+        <div class="pdv" id="pdv">
             <p> Наша почта: tocnonelohotron@mail.ru</p>
             <p> Наш номер: 8 800 555 35 35 </p>
             <p> &#169 lololo 2024-2024</p>
         </div>
     </div>
+    <!-- <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"> -->
+    <!-- </script> -->
+</body>
 
 </html>

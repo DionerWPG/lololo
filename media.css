@@ -1,0 +1,41 @@
+@media(max-width:575px){
+    .menu{
+        display: grid;
+    }
+    .menu a{
+        width: 100%;
+        
+    }
+    .present{
+        font-size: 80% ;
+    }
+    #catalog{
+        padding-left: 20px;
+        padding-right: 20px;
+
+    }
+    .Cata p{
+        font-size: 10px ;
+    }
+    .Cata img{
+       display: none;
+
+    }
+    .cards{
+        display: grid;
+    }
+    .card{
+        margin: 0px;
+    }
+    .cnt{
+        width: 100%;
+    }
+    .cnt input{
+        width: 80%;
+        display: grid;
+    }
+    .pdv{
+        width: 100%;
+        display: grid;
+    }
+}
